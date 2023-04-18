@@ -1,0 +1,98 @@
+ * Serving Flask app 'config'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:8080
+ * Running on https://10.0.4.14:8080
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 145-460-355
+202.125.194.17 - - [18/Apr/2023 01:12:43] "OPTIONS /log HTTP/1.1" 200 -
+202.125.194.17 - - [18/Apr/2023 01:12:43] "POST /log HTTP/1.1" 200 -
+202.125.194.17 - - [18/Apr/2023 01:12:43] "OPTIONS /check_input HTTP/1.1" 200 -
+202.125.194.17 - - [18/Apr/2023 01:12:43] "POST /check_input HTTP/1.1" 200 -
+202.125.194.18 - - [18/Apr/2023 05:44:48] "GET /explore_item HTTP/1.1" 200 -
+202.125.194.18 - - [18/Apr/2023 05:44:48] "OPTIONS /getmoney HTTP/1.1" 200 -
+202.125.194.18 - - [18/Apr/2023 05:44:48] "POST /getmoney HTTP/1.1" 200 -
+202.125.194.18 - - [18/Apr/2023 05:58:18] "GET /explore_item HTTP/1.1" 200 -
+202.125.194.18 - - [18/Apr/2023 05:58:18] "OPTIONS /getmoney HTTP/1.1" 200 -
+203.160.86.196 - - [18/Apr/2023 05:58:19] "POST /getmoney HTTP/1.1" 200 -
+203.160.86.196 - - [18/Apr/2023 05:58:19] "POST /getmoney HTTP/1.1" 200 -
+203.160.86.196 - - [18/Apr/2023 05:58:19] "POST /getmoney HTTP/1.1" 200 -
+202.125.194.18 - - [18/Apr/2023 05:58:26] "POST /getmoney HTTP/1.1" 200 -
+192.155.90.118 - - [18/Apr/2023 08:41:51] "[33mGET / HTTP/1.1[0m" 404 -
+167.248.133.49 - - [18/Apr/2023 10:56:04] "[33mGET / HTTP/1.1[0m" 404 -
+167.248.133.49 - - [18/Apr/2023 10:56:06] code 505, message Invalid HTTP version (2.0)
+167.248.133.49 - - [18/Apr/2023 10:56:06] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+183.136.225.32 - - [18/Apr/2023 11:02:12] "[33mGET / HTTP/1.1[0m" 404 -
+183.136.225.32 - - [18/Apr/2023 11:02:12] "[33mGET / HTTP/1.1[0m" 404 -
+183.136.225.32 - - [18/Apr/2023 11:02:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+183.136.225.32 - - [18/Apr/2023 11:02:13] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+184.105.247.243 - - [18/Apr/2023 15:07:54] "[33mGET / HTTP/1.1[0m" 404 -
+184.105.247.195 - - [18/Apr/2023 15:08:35] "[33mGET /redfish/v1 HTTP/1.1[0m" 404 -
+184.105.247.231 - - [18/Apr/2023 15:08:43] "[33mGET /dns-query?name=dnsscan.shadowserver.org&type=A HTTP/1.1[0m" 404 -
+ * Detected change in '/www/wwwroot/3334.imjyy.com/app/config.py', reloading
+数据库连接成功！
+数据库连接成功！
+000
+我来啦!!!
+{'dataFile': 'bd5d7dbe8d57557a9d13c164d6c61c50TQrl0ZeDeVZZV3ITUCtBVZpR+fFZrNFfcmvidBuOuA18fDWFgX0JTbhHvqDWkQI9xT0/PKwY9tJ62mJopIP5XLUZWXmfzujSGG9AXLdkTbs2T/f3TYP5NjSJynPYSGRZlvm8i95A/AyK+rDC5YG/bw==', 'encryptedAesKey': 'nzzd2RJxAKIrX1f5DJpE3xfeVuuYpGRNr6QQTOC44kyIexGgoxy5wwCiDZAjSoKcleZdJa7HPuDrygavRJbQXTuiDF537zQ4+TNBtVprmRaX203VBEfKbSphAwRBoiNFZYcDyBXs5HX1j97ROICSGN9jouG3JP57a9XQXollndBPB3DAQVywckt6EC0WQrmBoxaoQYTYX8aQxxuURybwgmfEIvWoTP4UnddXnP3q8mj3XRDIeQg0nmAwTzvNCcNtqTgSlR79BXsfTqXDu9u5uLLZMDGKI4/uvu1NcYQSV0mRZZTLOJUuPAScvOAZ/+dDxjs/cCfY4yG2+dbNYsrWUg=='}
+nzzd2RJxAKIrX1f5DJpE3xfeVuuYpGRNr6QQTOC44kyIexGgoxy5wwCiDZAjSoKcleZdJa7HPuDrygavRJbQXTuiDF537zQ4+TNBtVprmRaX203VBEfKbSphAwRBoiNFZYcDyBXs5HX1j97ROICSGN9jouG3JP57a9XQXollndBPB3DAQVywckt6EC0WQrmBoxaoQYTYX8aQxxuURybwgmfEIvWoTP4UnddXnP3q8mj3XRDIeQg0nmAwTzvNCcNtqTgSlR79BXsfTqXDu9u5uLLZMDGKI4/uvu1NcYQSV0mRZZTLOJUuPAScvOAZ/+dDxjs/cCfY4yG2+dbNYsrWUg==
+username,geted
+account_salt: 70ec2b6c9217c3fd
+hashpassword c729d103d317f72c5b116e0acb33e8b2fd139c3c15851cd24256fb660c311827
+return_dict: {'salt': '70ec2b6c9217c3fd'}
+数据库连接成功！
+数据库连接成功！
+222
+{'dataFile': '70ec2b6c9217c3fd624af6a8898d354dJ340gIfb2yzhFoFUd4rYvl/JBrOCKCDwbNFDukQiKry2xeQrizJ2LjH41XuBxvu+pBDxEhYT2UdhUvClZjq7+r7J4meDq33qpxCsXG2sJjQJZ/kRPWYuGqeZl1o/itJJteTGWtlb+upfvAGnfaDE4A==', 'encryptedAesKey': 'bgPzJD5OOCiqug+7klAIN/wnEXsDOKGH5wcMMbqasQACzM3uvNvS78mVYxfT/O/c3+IuEHHBil8209s59bnqzn5yNItabe2Hd+bSj//91Z990Go5rD4Jbt2sjsIPKDnkitxMxFZMLRmtROfIj9jwL23bLuZ9x6VvxKL5PiwydNJ9/qbqY//gqVyqJmlDaoKy0ZJJOX5Bpzsv46Mx0gbkxZG6rXf+q2JSM85/AI6r0+0Y9r3ODpzxKvFX98SFexE9KWtjywHMSGQxzj3uYZ7nC0IWBN9XwKWUHp77w5u/nS1xk+yRV0vZycIYgG0hFpSID/ZcumjCMe7q/NyRBs8RHQ=='}
+bgPzJD5OOCiqug+7klAIN/wnEXsDOKGH5wcMMbqasQACzM3uvNvS78mVYxfT/O/c3+IuEHHBil8209s59bnqzn5yNItabe2Hd+bSj//91Z990Go5rD4Jbt2sjsIPKDnkitxMxFZMLRmtROfIj9jwL23bLuZ9x6VvxKL5PiwydNJ9/qbqY//gqVyqJmlDaoKy0ZJJOX5Bpzsv46Mx0gbkxZG6rXf+q2JSM85/AI6r0+0Y9r3ODpzxKvFX98SFexE9KWtjywHMSGQxzj3uYZ7nC0IWBN9XwKWUHp77w5u/nS1xk+yRV0vZycIYgG0hFpSID/ZcumjCMe7q/NyRBs8RHQ==
+hashPas_new c729d103d317f72c5b116e0acb33e8b2fd139c3c15851cd24256fb660c311827
+{'message': 'Y', 'id': '1'}
+数据库连接成功！
+signIn_POST!!!
+{1: ['item1', 'images/items/5.jpg', 100], 11: ['item1', 'images/items/4.jpg', 100], 16: ['Xiong yifan 原味', 'images/items/15.jpg', 0], 17: ['12313', 'images/items/20.jpg', 0], 18: ['Xiong yifan 原味', 'images/items/13.jpg', 0], 19: ['jyy的小jiojio', 'images/items/3.jpg', 0]}
+数据库连接成功！
+数据库连接成功！
+signIn_POST!!!
+[[(11110200.0, '123', '123')], {1: ['item1', 'images/items/5.jpg', 100], 2: ['item2', 'images/items/6.jpg', 100]}]
+数据库连接成功！
+signIn_POST!!!
+{1: ['item1', 'images/items/5.jpg', 100], 11: ['item1', 'images/items/4.jpg', 100], 16: ['Xiong yifan 原味', 'images/items/15.jpg', 0], 17: ['12313', 'images/items/20.jpg', 0], 18: ['Xiong yifan 原味', 'images/items/13.jpg', 0], 19: ['jyy的小jiojio', 'images/items/3.jpg', 0]}
+数据库连接成功！
+数据库连接成功！
+signIn_POST!!!
+[[(11110200.0, '123', '123')], {1: ['item1', 'images/items/5.jpg', 100], 2: ['item2', 'images/items/6.jpg', 100]}]
+数据库连接成功！
+signIn_POST!!!
+[[(11110200.0, '123', '123')], {1: ['item1', 'images/items/5.jpg', 100], 2: ['item2', 'images/items/6.jpg', 100]}]
+数据库连接成功！
+signIn_POST!!!
+[[(11110200.0, '123', '123')], {1: ['item1', 'images/items/5.jpg', 100], 2: ['item2', 'images/items/6.jpg', 100]}]
+数据库连接成功！
+signIn_POST!!!
+[[(11110200.0, '123', '123')], {1: ['item1', 'images/items/5.jpg', 100], 2: ['item2', 'images/items/6.jpg', 100]}]
+数据库连接成功！
+数据库连接成功！
+数据库连接成功！
+数据库连接成功！
+数据库连接成功！
+数据库连接成功！
+数据库连接成功！
+数据库连接成功！
+数据库连接成功！
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 145-460-355
+ * Detected change in '/www/wwwroot/3334.imjyy.com/app/tools/signature.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/www/wwwroot/3334.imjyy.com/app/app.py", line 5, in <module>
+    import tools
+  File "/www/wwwroot/3334.imjyy.com/app/tools/__init__.py", line 7, in <module>
+    from .signature import signature
+  File "/www/wwwroot/3334.imjyy.com/app/tools/signature.py", line 126
+    else:
+    ^
+IndentationError: expected an indented block

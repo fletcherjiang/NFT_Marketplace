@@ -1,0 +1,113 @@
+body { 
+	background-color: #EEEEEE;
+  	font-family: 'Montserrat', sans-serif;
+  }
+.logo img{
+	max-height: 100px;
+	margin: 0;
+	padding: 0;
+}
+form, .name{
+	text-align: center;
+}
+.navlinks li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 6px;
+}
+.toplinks {
+	font-size: 17px;
+	padding-top: 15px;
+	text-transform: uppercase;
+}
+li a:hover, .name a:hover{
+	text-decoration: none;
+}
+.name{
+	font-size: 50px;
+	padding-top:12px;
+}
+.register, .login{
+	padding-bottom: 4px;
+    box-shadow: 4px 4px 3px #888888;
+    background-color: #CCC;
+
+}
+.register h3, .login h3{
+	padding-top: 10px;
+	padding-bottom: 10px;	
+	background-color: #173e43;
+	box-shadow: 2px 2px 1px #888888;
+	color: #ffffff;
+}
+.regb button{
+	margin-left: 300px;
+	box-shadow: 2px 2px 1px #888888;
+	background-color: #173e43;
+	color: #ffffff;
+}
+.regb{
+	padding-top: 20px;
+}
+.register .form-control, .login .form-control{
+	box-shadow: 2px 2px 1px #888888;	
+}
+.register .form-group .col-sm-8, .register .form-group .row{
+	padding-top: 20px;
+	margin-left: 75px;
+	font-family:Arial, FontAwesome;
+}
+.login .form-group .col-sm-8{
+	padding-top: 35px;
+	margin-left: 75px;
+	font-family:Arial, FontAwesome;
+}
+form label{
+	padding-bottom: 10px;
+	color: #000000;
+}
+.toplinks i{
+	padding-right: 5px;
+}
+/*.navbar-fixed-top {
+  top: 100px;
+  border-width: 0 0 1px;
+}*/
+.footer{
+	background-color: #002625;
+	 background-color: #002625;
+  		padding: 40px;
+  		margin-top: 80px;
+  	text-align: center;
+  	color: white;
+}
+.links{
+	padding-top: 25px;
+}
+.left-sidebar{
+
+}
+.prod_im{
+	width:60%;
+	height:60%;
+}
+.w3-card-8{
+	padding:30px;
+}
+.nav-stacked a{
+	color: white;
+	padding: 2px;
+}
+
+.nav-stacked a:hover{
+	color: black;
+}
+.w3-card-4{
+	background-color: #D3E2E9;
+}
+.panel-group{
+	margin-top: 17px;
+}
+.brands_products{
+	padding-top: 14px;
+}

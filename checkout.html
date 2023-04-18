@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="js/secure_reg.js"></script>
+	<meta charset="UTF-8">
+	<title>Payment Checkout</title>
+	<link rel="stylesheet" href="css/style_checkout.css">
+	<script src="js/secure_reg.js"></script>
+
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"> -->
+
+	 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico" />
+
+
+
+</head>
+<body onload = "legalogin()">
+
+<div id="main-wrapper" class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <p>s</p>
+    </div>
+
+
+    <h2>Secure Payment</h2>
+		<form action="" class="sign-up-form" method="post" onsubmit="event.preventDefault(); signTransaction();">
+    <div class="form">
+      <div class="card space icon-relative">
+        <label class="label">Transaction private key:</label>
+				<i class="far fa-credit-card"></i>
+				<textarea id="sk" class="input" placeholder="Key Number" required></textarea>
+        <!-- <input type="text" id="sk" class="input" placeholder="Key Number" required> -->
+
+
+      </div>
+			<div id="message" class="message"></div>
+			<input type="submit" value="Buy" class="btn btn-primary" required/>
+
+
+      </div>
+		</form>
+
+
+
+    </div>
+  </div>
+</div>
+
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.0.0-rc.1/jsencrypt.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.4.0/jsrsasign-all-min.js"></script>
+
+</body>
+</html>

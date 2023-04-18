@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>COMP3334-NFT Marketplace</title>
+    <script src="js/secure_reg.js"></script>
+    <meta
+      name="description"
+      content="NFTPRO is the complete UX & UI dashboard for NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc."
+    />
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico" />
+    <!-- Style CSS -->
+    <script src="https://kit.fontawesome.com/8480c336de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style_dashboard.css" />
+  </head>
+
+  <body class="dark-theme" onload = "legalogin(); displayusername();getmoney();my_item();">
+    <!-- Main Wrapper -->
+    <div id="main-wrapper" class="front">
+      <!-- Header -->
+      <div class="header landing">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <!-- Navbar -->
+              <div class="navigation">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="brand-logo">
+                    <a href="dashboard.html">
+                      <img src="images/logo.png" alt="" class="logo-primary" width = 102px height="34"/>
+                      <img src="images/logow.png" alt="" class="logo-white" width = 102px height="34"/>
+                    </a>
+                  </div>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="dashboard.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="item.html">Explore</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html#collection">Collection</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html#categories">Categories</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html#create">Create</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="signin-btn d-flex align-items-center">
+                    <div
+                      class="dark-light-toggle theme-switch"
+                      onclick="themeToggle()"
+                    >
+                      <span class="dark"><i class="ri-moon-line"></i></span>
+                      <span class="light"><i class="ri-sun-line"></i></span>
+                    </div>
+
+                    <a class="btn btn-primary" href="account.html" id="money"> </a>
+                    &nbsp;&nbsp;
+                    <a href = "javascript:void(0);" onclick ="logout()" class="btn btn-outline-primary"> Log out </a>
+                  </div>
+                </nav>
+              </div>
+              <!-- End Navbar -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Header -->
+
+      <!-- Home Section -->
+
+      <div class="intro section-padding" id="home">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-xl-5 col-lg-6 col-12">
+              <div class="intro-content my-5">
+                <h1 class="mb-3" id="usernameclass">
+<!--                  Good Morning!<span> User Name</span>-->
+                </h1>
+                <p>Let's trading now!</p>
+                <div class="intro-btn mt-5">
+                  <a class="btn btn-primary" href="item.html"
+                    >Explore<i class="bi bi-arrow-right"></i>
+                  </a>
+                  <a class="btn btn-outline-primary" href="upload.html">Upload</a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- <div class="col-xl-5 col-lg-6 col-12">
+              <div class="intro-slider">
+                <div class="slider-item">
+                  <img src="images/items/9.jpg" alt="" class="img-fluid" />
+                  <div class="slider-item-avatar">
+                    <a href="#categories"
+                      ><img src="images/avatar/1.png" alt=""
+                    /></a>
+                    <div>
+                      <h5>The VrPolystar</h5>
+                      <p>Peter Ng</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- End Home Section -->
+
+      <div class="trending-category section-padding bg-light triangle-top-light triangle-bottom-light"
+        id="trending">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div
+                class="section-title text-center d-flex justify-content-between mb-3"
+              >
+                <h2>NFT Items I have</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center" id="totalitems">
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+      <!-- Explore Section -->
+      <div
+        class="notable-drops section-padding bg-light triangle-top-light triangle-bottom-light"
+        id="explore">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div
+                class="section-title text-center d-flex justify-content-between mb-3">
+                <h2>Hottest Colection</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="card">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/items/1.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <div class="notable-drops-content-img"></div>
+                  <h4 class="card-title">Petter Collection</h4>
+                  <p>Make your offers before April 30th</p>
+                  <a href="#explore"
+                    >Explore<i class="bi bi-arrow-right-short"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="card">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/items/2.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <div class="notable-drops-content-img"></div>
+                  <h4 class="card-title">Peter Collection</h4>
+                  <p>SE from Max around the world</p>
+                  <a href="#explore"
+                    >Explore<i class="bi bi-arrow-right-short"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="card">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/items/3.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <div class="notable-drops-content-img"></div>
+                  <h4 class="card-title">HAHA</h4>
+                  <p>A collection of HAHA</p>
+                  <a href="#explore"
+                    >Explore<i class="bi bi-arrow-right-short"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="card">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/items/4.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <div class="notable-drops-content-img"></div>
+                  <h4 class="card-title">HAHA</h4>
+                  <p>A collection of HAHA</p>
+                  <a href="#explore"
+                    >Explore<i class="bi bi-arrow-right-short"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Explore Section -->
+
+      <!-- Collections -->
+
+      <!--End Categories Section -->
+
+      <!-- Footer -->
+      <div
+        class="bottom section-padding triangle-top-dark triangle-bottom-dark"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8">
+              <div class="bottom-logo">
+                <img class="pb-3" src="images/logoh.png" alt="" width = 102px height="50"/>
+                <p>
+                  We were the first team in Hong Kong to decentralise trading, We have built an absolutely secure trading environment to protect your privacy. You can trade anything on the platform.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-4 col-6">
+              <div class="bottom-widget">
+                <h4 class="widget-title">About us</h4>
+                <ul>
+                  <li><a href="#explore">Explore</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#collection">Collection</a></li>
+                  <li><a href="#">Connect</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+              <div class="bottom-widget">
+                <h4 class="widget-title">Settings</h4>
+                <ul>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Application</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Activity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8">
+              <div class="bottom-widget">
+                <h4 class="widget-title">Profile</h4>
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <ul>
+                      <li><a href="#">Profile</a></li>
+                      <li><a href="#">Created</a></li>
+                      <li><a href="#">Collected</a></li>
+                      <li><a href="#">Activity</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <ul>
+                      <li><a href="#">On Sale</a></li>
+                      <li><a href="#">Liked</a></li>
+                      <li><a href="#">Following</a></li>
+                      <li><a href="#">Followers</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="copyright">
+                <p>
+                  © Copyright 2023 <a href="#">COMP3334 SARTS</a>
+                  All Rights Reserved
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Footer -->
+    </div>
+    <!-- End Main Wrapper -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

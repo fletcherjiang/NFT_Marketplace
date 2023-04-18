@@ -1,0 +1,191 @@
+
+.container-product {
+  max-width: 75%;
+  margin: auto;
+  height: 80vh;
+  margin-top: 5%;
+  /* background: white; */
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.left, .right {
+  width: 50%;
+  padding: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.main_image {
+  width: auto;
+  height: auto;
+}
+
+.option img {
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+}
+
+.right {
+  padding: 50px 100px 50px 50px;
+}
+
+h3 {
+  margin: 20px 0 20px 0;
+  font-size: 25px;
+}
+
+h5,
+p,
+
+
+small {
+  color: #837D7C;
+}
+
+h4 {
+  color: red;
+}
+
+p {
+  margin: 20px 0 50px 0;
+  line-height: 25px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+label,
+.add span,
+.color span {
+  width: 25px;
+  height: 25px;
+  background: #000;
+  border-radius: 50%;
+  margin: 20px 10px 20px 0;
+}
+
+.color span:nth-child(2) {
+  background: #EDEDED;
+}
+
+.color span:nth-child(3) {
+  background: #D5D6D8;
+}
+
+.color span:nth-child(4) {
+  background: #EFE0DE;
+}
+
+.color span:nth-child(5) {
+  background: #AB8ED1;
+}
+
+.color span:nth-child(6) {
+  background: #F04D44;
+}
+
+.add label,
+.add span {
+  background: none;
+  border: 1px solid #C1908B;
+  color: #C1908B;
+  text-align: center;
+  line-height: 25px;
+}
+
+.add label {
+  padding: 10px 30px 0 20px;
+  border-radius: 50px;
+  line-height: 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #498ae9;
+  color: white;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width:768px) {
+  .container {
+    max-width: 90%;
+    margin: auto;
+    height: auto;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+
+.slide {
+  margin-left:20%;
+  margin-top: 10%;
+  width: 60%;
+  height: 60%;
+
+
+}
+@media only screen and (max-width:511px) {
+  .container {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .left, .right {
+    padding: 0;
+  }
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .option {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    /* grid-template-columns: 15% 85%; */
+    padding: 0 0.4rem;
+    position: relative;
+}

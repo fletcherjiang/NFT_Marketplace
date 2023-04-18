@@ -1,0 +1,18 @@
+#outer{
+	width:100%;
+	text-align: center;
+	padding-bottom: 250px;
+}
+
+#inner{
+	display:inline-block;
+	border:1px solid gray;
+	width 600px;
+	padding:10px;
+	margin:10px auto;
+	-moz-margin:10px auto;
+	-webkit-margin:10px auto;
+	box-shadow: 5px 5px 15px #A0A0A0;
+	-moz-box-shadow: 5px 5px 15px #A0A0A0;
+	-webkit-box-shadow: 5px 5px 15px #A0A0A0;
+}

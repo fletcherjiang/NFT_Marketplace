@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>COMP3334-NFT Marketplace</title>
+    <meta
+      name="description"
+      content="NFTPRO is the complete UX & UI dashboard for NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc."
+    />
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style_dashboard.css" />
+    <script src="https://kit.fontawesome.com/8480c336de.js" crossorigin="anonymous"></script>
+    <script src="js/secure_reg.js"></script>
+  </head>
+
+  <body class="dark-theme" onload = "legalogin()">
+    <!-- Main Wrapper -->
+    <div id="main-wrapper" class="front">
+      <!-- Header -->
+      <div class="header landing">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <!-- Navbar -->
+              <div class="navigation">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="brand-logo">
+                    <a href="#">
+                      <img src="images/logo.png" alt="" class="logo-primary" width = 102px height="34"/>
+                      <img src="images/logow.png" alt="" class="logo-white" width = 102px height="34"/>
+                    </a>
+                  </div>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="dashboard.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="item.html">Explore</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html#collection">Collection</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html#categories">Categories</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html#create">Create</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="signin-btn d-flex align-items-center">
+                    <div
+                      class="dark-light-toggle theme-switch"
+                      onclick="themeToggle()"
+                    >
+                      <span class="dark"><i class="ri-moon-line"></i></span>
+                      <span class="light"><i class="ri-sun-line"></i></span>
+                    </div>
+
+                    <a class="btn btn-primary" href="account.html">My Account</a>
+                    &nbsp;&nbsp;
+                    <a href = "javascript:void(0);" onclick ="logout()" class="btn btn-outline-primary"> Log out </a>
+                  </div>
+                </nav>
+              </div>
+              <!-- End Navbar -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Header -->
+
+      <!-- Home Section -->
+
+      <div class="intro section-padding" id="home">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-xl-5 col-lg-6 col-12">
+              <div class="intro-content my-5">
+                <h1 class="mb-3">
+                  Discover, collect, and sell<span> extraordinary NFTs</span>
+                </h1>
+                <p>on the Polyu's first &amp; largest NFT marketplace</p>
+                <div class="intro-btn mt-5">
+
+                  <a class="btn btn-primary" href="item.html">
+                  <!-- <a href = "javascript:void(0);" onclick ="my_explore()" class="btn btn-primary"> -->
+                  Explore<i class="bi bi-arrow-right"></i>
+                  </a>
+
+                  <a class="btn btn-outline-primary" href="#create">Create</a>
+                </div>
+                <a class="more c-pointer d-inline-flex" href="#">
+                  <span><i class="bi bi-play-fill"></i></span>
+                  Learn more about SARTS</a
+                >
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 col-12">
+              <div class="intro-slider">
+                <div class="slider-item">
+                  <img src="images/leixing/v1-right1.jpg" alt="" class="img-fluid" />
+                  <div class="slider-item-avatar">
+                    <a href="#categories"
+                      ><img src="images/avatar/1.png" alt=""
+                    /></a>
+                    <div>
+                      <h5>The VrPolystar</h5>
+                      <p>Peter Ng</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Home Section -->
+
+
+      <!-- End Explore Section -->
+
+      <!-- Collections -->
+
+      <div class="top-collection section-padding" id="collection">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="section-title text-center">
+                <h2>Top collections over last 7 days</h2>
+                <p>Here are a few reasons why you should choose NFTPRO</p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >1
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/1.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-success">
+                    +
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >2
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/2.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-success">
+                    +
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >3
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/3.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-danger">
+                    -
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >4
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/4.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-success">
+                    +
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >5
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/5.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-danger">
+                    -
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >6
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/6.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-success">
+                    +
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >7
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/7.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-danger">
+                    -
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >8
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/8.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-success">
+                    +
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >9
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/9.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-danger">
+                    -
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >10
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/10.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-success">
+                    +
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >11
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/11.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-success">
+                    +
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <a class="top-collection-content d-block" href="#collection">
+                <div class="d-flex align-items-center">
+                  <span class="serial"
+                    >12
+                    <!-- -->.
+                  </span>
+                  <div class="flex-shrink-0">
+                    <span class="top-img"
+                      ><img
+                        class="img-fluid"
+                        src="images/items/12.jpg"
+                        alt=""
+                        width="70"
+                    /></span>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h5>The Sandbox</h5>
+                    <p class="text-muted">
+                      <img
+                        src="images/svg/eth.svg"
+                        alt=""
+                        width="10"
+                        class="me-2"
+                      />136305.78
+                    </p>
+                  </div>
+                  <h5 class="text-danger">
+                    -
+                    <!-- -->104.25
+                  </h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Collections -->
+
+      <!-- Trending -->
+
+
+      <!--  Create Section -->
+
+      <div class="create-sell section-padding" id="create">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="section-title text-center">
+                <h2>Create and sell your NFTs</h2>
+                <p>Here are a few reasons why you should choose SARTS</p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-6">
+              <div class="create-sell-content">
+                <div class="create-sell-content-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                  <h4>Set up your wallet</h4>
+                  <p>
+                    Once you’ve set up your wallet of choice, connect it to
+                    SARTS by clicking the wallet icon in the top right corner.
+                    Learn about the wallets we support.
+                  </p>
+                  <a href="#explore"
+                    >Explore<i class="bi bi-arrow-right-short"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+              <div class="create-sell-content">
+                <div class="create-sell-content-icon">
+                  <i class="bi bi-x-diamond"></i>
+                </div>
+                <div>
+                  <h4>Create your collection</h4>
+                  <p>
+                    Click My Collections and set up your collection. Add social
+                    links, a description, profile &amp; banner images, and set a
+                    secondary sales fee.
+                  </p>
+                  <a href="#explore"
+                    >Explore<i class="bi bi-arrow-right-short"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+              <div class="create-sell-content">
+                <div class="create-sell-content-icon">
+                  <i class="bi bi-circle-half"></i>
+                </div>
+                <div>
+                  <h4>Add your NFTs</h4>
+                  <p>
+                    Upload your work (image, video, audio, or 3D art), add a
+                    title and description, and customize your NFTs with
+                    properties, stats, and unlockable content.
+                  </p>
+                  <a href="#explore"
+                    >Explore<i class="bi bi-arrow-right-short"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+              <div class="create-sell-content">
+                <div class="create-sell-content-icon">
+                  <i class="bi bi-circle-half"></i>
+                </div>
+                <div>
+                  <h4>List them for sale</h4>
+                  <p>
+                    Choose between auctions, fixed-price listings, and
+                    declining-price listings. You choose how you want to sell
+                    your NFTs, and we help you sell them!
+                  </p>
+                  <a href="#explore"
+                    >Explore<i class="bi bi-arrow-right-short"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  End Create Section -->
+
+      <!-- Categories Section -->
+      <div class="browse-category section-padding border-top" id="categories">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="section-title text-center">
+                <h2>Browse by category</h2>
+                <p>Here are a few reasons why you should choose SARTS</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+              <div class="card browse-cat">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/leixing/art.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h4>Art</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+              <div class="card browse-cat">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/leixing/2.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h4>Collectibles</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+              <div class="card browse-cat">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/leixing/domain-names.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h4>Domain Names</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+              <div class="card browse-cat">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/leixing/music.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h4>Music</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+              <div class="card browse-cat">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/leixing/Photography.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h4>Photography</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+              <div class="card browse-cat">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/leixing/sports.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h4>Sports</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+              <div class="card browse-cat">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/leixing/cards.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h4>Trading Cards</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+              <div class="card browse-cat">
+                <img
+                  class="img-fluid card-img-top"
+                  src="images/leixing/Utility.png"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h4>Utility</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--End Categories Section -->
+
+      <!-- Footer -->
+      <div
+        class="bottom section-padding triangle-top-dark triangle-bottom-dark"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8">
+              <div class="bottom-logo">
+                <img class="pb-3" src="images/logoh.png" alt="" width = 102px height="50"/>
+                <p>
+                  We were the first team in Hong Kong to decentralise trading, We have built an absolutely secure trading environment to protect your privacy. You can trade anything on the platform.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-4 col-6">
+              <div class="bottom-widget">
+                <h4 class="widget-title">About us</h4>
+                <ul>
+                  <li><a href="#explore">Explore</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#collection">Collection</a></li>
+                  <li><a href="#">Connect</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+              <div class="bottom-widget">
+                <h4 class="widget-title">Settings</h4>
+                <ul>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Application</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Activity</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8">
+              <div class="bottom-widget">
+                <h4 class="widget-title">Profile</h4>
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <ul>
+                      <li><a href="#">Profile</a></li>
+                      <li><a href="#">Created</a></li>
+                      <li><a href="#">Collected</a></li>
+                      <li><a href="#">Activity</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <ul>
+                      <li><a href="#">On Sale</a></li>
+                      <li><a href="#">Liked</a></li>
+                      <li><a href="#">Following</a></li>
+                      <li><a href="#">Followers</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="copyright">
+                <p>
+                  © Copyright 2023 <a href="#">COMP3334 SARTS</a>
+                  All Rights Reserved
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Footer -->
+    </div>
+    <!-- End Main Wrapper -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
