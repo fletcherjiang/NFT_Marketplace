@@ -1,7 +1,6 @@
 # NFT_Marketplace
 
- *A Group Project of Computer Systems Security (COMP3
-334) subject at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), made by [JIANG Yiyang](https://github.com/fletcherjiang), [WANG lili]() and [XIONG Yifan](), 2023-06-18* 
+ *A Group Project of Computer Systems Security (COMP3334) subject at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), made by [JIANG Yiyang](https://github.com/fletcherjiang), [WANG lili]() and [XIONG Yifan](), 2023-06-18* 
 
 ## For Users
 Visit the website [https://3334.imjyy.com/](https://3334.imjyy.com/) directly and use it without installation.
